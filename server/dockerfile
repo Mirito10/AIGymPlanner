@@ -16,5 +16,5 @@ COPY . .
 # Exponer el puerto
 EXPOSE 3000
 
-# Comando por defecto para arrancar tu servidor TS directamente con tsx
+# Comando por defecto para arrancar tu servidor TS directamente con tsx hjola
 CMD ["npm", "run", "dev:server"]
