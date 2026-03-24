@@ -6,3 +6,5 @@ const connectionString = process.env.DATABASE_URL!;
 
 const adapter = new PrismaPg({ connectionString });
 export const prisma = new PrismaClient({ adapter });
+
+console.log("DATABASE_URL INSIDE DOCKER:", process.env.DATABASE_URL);
