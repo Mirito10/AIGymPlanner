@@ -177,6 +177,10 @@ export default function Onboarding() {
                                 onChange={(e) => updateForm("injuries", e.target.value)}
                             />
 
+                            {error && (
+                            <p className="text-red-400 text-sm">{error}</p>
+                            )}
+
                             <div className="flex gap-3 pt-2">
                                 <Button type="submit" className="flex-1 gap-2">
                                     Generate My Plan <ArrowRight className="w-4 h-4" />
