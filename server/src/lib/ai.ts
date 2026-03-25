@@ -12,7 +12,7 @@ export async function generateTrainingPlan(
         goal: profile.goal || "bulk",
         experience: profile.experience || "advanced",
         days_per_week: profile.days_per_week || 4,
-        session_length: profile.session_length || 90,
+        session_length: profile.session_length || 60,
         equipment: profile.equipment || "full_gym",
         injuries: profile.injuries || null,
         preferred_split: profile.preferred_split || "upper_lower",
@@ -90,7 +90,7 @@ function formatPlanResponse(
             exercises: (day.exercises || []).map((ex: any) => ({
                 name: ex.name || "Exercise",
                 sets: ex.sets || 3,
-                reps: ex.reps || "6-12",
+                reps: ex.reps || "4-10",
                 rest: ex.rest || "2-5 min",
                 rpe: ex.rpe || 7,
                 notes: ex.notes,
