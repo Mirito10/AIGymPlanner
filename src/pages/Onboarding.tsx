@@ -73,6 +73,7 @@ export default function Onboarding() {
 
     async function handleQuestionnaire(e: React.SubmitEvent) {
         e.preventDefault();
+        console.log("SUBMIT TRIGGERED");
 
         const profile: Omit<UserProfile, "userId" | "updatedAt"> = {
             goal: formData.goal as UserProfile["goal"],
@@ -84,9 +85,12 @@ export default function Onboarding() {
             preferredSplit: formData.preferredSplit as UserProfile["preferredSplit"],
         };
         try {
+            console.log("Saving profile...");
             await saveProfile(profile);
+            console.log("Generating plan...");
             setIsGenerating(true);
             await generatePlan();
+            console.log("Navigating...");
             navigate("/profile");
         } catch (err) {
             setError(err instanceof Error ? err.message : "Failed to save profile");
