@@ -14,27 +14,27 @@ import { useAuth } from "../context/AuthContext";
 const features = [
   {
     icon: Sparkles,
-    title: "AI-Assisted Food Logging",
+    title: "AI-Powered Plans",
     description:
-      "Register meals faster with photo-based food analysis and automatic nutritional estimation.",
+      "Get a training program tailored to your goals, experience, and schedule.",
   },
   {
     icon: Target,
-    title: "Personalized Health Goals",
+    title: "Goal-Oriented",
     description:
-      "Track your progress based on your profile, biometric data, and nutrition or fitness objectives.",
+      "Whether you want to build muscle, lose fat, or get stronger — we optimize for your goal.",
   },
   {
     icon: Calendar,
-    title: "Daily Progress Tracking",
+    title: "Flexible Scheduling",
     description:
-      "Monitor meals, activity, and health metrics through clear daily summaries and historical records.",
+      "Plans that fit your lifestyle. Train 2 days or 6 — we adapt to you.",
   },
   {
     icon: Clock,
-    title: "Professional Follow-Up",
+    title: "Time-Efficient",
     description:
-      "Support collaboration between clients, nutritionists, and trainers with updated progress insights.",
+      "Every workout is designed to maximize results in your available time.",
   },
 ];
 
@@ -57,20 +57,20 @@ export default function Home() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--color-card)] border border-[var(--color-border)] mb-8">
             <Zap className="w-4 h-4 text-[var(--color-accent)]" />
             <span className="text-sm text-[var(--color-muted)]">
-              Smart health and nutrition tracking
+              AI-powered training plans
             </span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-            Smarter
+            Your Perfect
             <br />
-            <span className="text-[var(--color-accent)]">Health Tracker</span> 
+            <span className="text-[var(--color-accent)]">Gym Plan</span> in
+            Seconds
           </h1>
 
           <p className="text-xl text-[var(--color-muted)] max-w-2xl mx-auto mb-10">
-            Track your meals, activity, and progress in one place. VitaUno helps
-            users and professionals make better health decisions with clear data
-            and AI-assisted tools.
+            Stop guessing. Get a personalized training program built by AI,
+            tailored to your goals, experience, and schedule.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -93,10 +93,10 @@ export default function Home() {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why VitaUno?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why GymAI?</h2>
             <p className="text-[var(--color-muted)] text-lg max-w-2xl mx-auto">
-              VitaUno connects nutrition, activity tracking, and health progress
-              into a single platform designed for both users and professionals.
+              We combine fitness expertise with AI to create programs that
+              actually work for you.
             </p>
           </div>
 
